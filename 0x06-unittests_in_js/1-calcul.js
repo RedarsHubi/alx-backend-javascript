@@ -8,7 +8,7 @@ function calculateNumber(type, a, b) {
   if (type === 'DIVIDE') {
     const roundedB = Math.round(b);
     if (roundedB === 0) {
-      throw new Error('Cannot divide by zero');
+      return 'Error';
     }
     return Math.round(a) / Math.round(b);
   };

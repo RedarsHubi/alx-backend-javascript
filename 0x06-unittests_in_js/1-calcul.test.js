@@ -12,4 +12,7 @@ describe('calculateNumber', function () {
     it('returns -2', function () {
       assert.strictEqual(calculateNumber('DIVIDE', -1.6, -0.6), 2);
     });
+    it('returns error', function () {
+      assert.strictEqual(calculateNumber('DIVIDE', -1.6, 0), 'Error');
+    });
   })
